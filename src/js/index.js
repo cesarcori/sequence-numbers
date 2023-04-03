@@ -1,13 +1,19 @@
 function fibonacciNumber() {
+
   let fibo_number = document.getElementById("enter-value").value;
 
-  let n1 = 0, n2 = 1, nextTerm; // variables
+  let num1 = 0, num2 = 1, sum; // variables
 
   for (let i = 1; i <= fibo_number; i++) {
-      document.getElementById("result-fibonacci").innerText = n1
-      console.log(n1)
-      nextTerm = n1 + n2;
-      n1 = n2;
-      n2 = nextTerm;
+
+    document.getElementById("result-fibonacci").innerText = num1
+    console.log(num1)
+
+    sum = num1 + num2;
+    num1 = num2;
+    num2 = sum;
+
   }
+
 }
+
