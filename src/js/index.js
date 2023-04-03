@@ -6,8 +6,12 @@ function fibonacciNumber() {
 
   for (let i = 1; i <= fibo_number; i++) {
 
-    document.getElementById("result-fibonacci").innerText = num1
-    console.log(num1)
+    const newP = document.createElement("p");
+    const newContent = document.createTextNode(num1);
+    newP.appendChild(newContent);
+
+    const currentDiv = document.getElementById("result-fibonacci");
+    document.body.insertBefore(newP, currentDiv);
 
     sum = num1 + num2;
     num1 = num2;
