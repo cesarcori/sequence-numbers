@@ -1,5 +1,11 @@
 function fibonacciNumber() {
 
+  // Clear elements into div.
+  const list = document.getElementById("result-fibonacci");
+  while (list.hasChildNodes()) {
+    list.removeChild(list.firstChild);
+  }
+
   let fibo_number = document.getElementById("enter-value").value;
 
   let num1 = 0, num2 = 1, sum; // variables
