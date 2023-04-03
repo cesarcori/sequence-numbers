@@ -11,7 +11,8 @@ function fibonacciNumber() {
     newP.appendChild(newContent);
 
     const currentDiv = document.getElementById("result-fibonacci");
-    document.body.insertBefore(newP, currentDiv);
+    // document.body.insertBefore(newP, currentDiv);
+    currentDiv.appendChild(newP)
 
     sum = num1 + num2;
     num1 = num2;
